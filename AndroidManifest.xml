@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ducnd.exercise11_filemanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/file_manager"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ducnd.dialog.NewFolder"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" >
+        </activity>
+        <activity
+            android:name="com.ducnd.dialog.NewFile"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" >
+        </activity>
+        <activity
+            android:name="com.ducnd.dialog.Properties"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog" >
+        </activity>
+        <activity android:name="com.ducnd.exercise11_filemanager.ActivitySearch">
+            
+        </activity>
+        <activity android:name="com.ducnd.dialog.List"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog">
+           
+        </activity>
+    </application>
+
+</manifest>

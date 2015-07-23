@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/open" android:title="Open" />
+    <item android:id="@+id/remane" android:title="Rename"/>
+    <item android:id="@+id/delete" android:title="Delete"/>
+    <item android:id="@+id/property" android:title="Property"/>
+    <item android:id="@+id/choose" android:title="Choose"/>
+    <item android:id="@+id/cancel" android:title="Cancel"/>
+
+</menu>

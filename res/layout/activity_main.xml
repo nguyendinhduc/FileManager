@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:background="#03a9f4" >
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnSearch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:onClick="actionBtnSearch"
+            android:scaleType="fitXY"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/btnSearch"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <requestFocus />
+
+        <ImageButton
+            android:id="@+id/btnShowList"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/list" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvFolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:divider="#9e9e9e"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        android:background="#e1bee7" >
+
+        <ImageButton
+            android:id="@+id/btnNewFolder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/new_folder" />
+
+        <ImageButton
+            android:id="@+id/btnNewFile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/document_new" />
+
+        <ImageButton
+            android:id="@+id/btnRename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/rename" />
+
+        <ImageButton
+            android:id="@+id/btnAllChoose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/view_choose" />
+
+        <ImageButton
+            android:id="@+id/btnTrash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/bin" />
+    </TableRow>
+
+</LinearLayout>
